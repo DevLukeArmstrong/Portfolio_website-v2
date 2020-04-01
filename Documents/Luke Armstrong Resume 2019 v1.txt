@@ -1,0 +1,61 @@
+﻿Luke Armstrong
+Bachelor of Science majoring in Computer Science, Waikato University
+	11 Sunbrae Grove, Mt Maunganui, Tauranga
+New Zealand, 3116
+(+64) 278500472
+Ltarmstrong96@gmail.com
+	ABOUT
+A passionate, curious and enthusiastic individual who is always looking to dive into exciting challenges and new surroundings. I’m interested in full-stack development, backend development, mobile development, UX design, and web development. I’m currently in search of a long-term software development role in a company with a vibrant culture.
+EXPERIENCE
+Nyriad, Cambridge, NZ — Software Developer
+NOV 2018 - PRESENT
+I joined the company, fresh out of University, while they were beginning their transition from a start-up to a growth-stage company. I’ve had hands-on experience with a range of skills including agile methodology, full-stack development, DevOps and UX development in my multiple roles at Nyriad. I mostly used C++, Golang, and Python in this role.
+Nyriad, Cambridge, NZ — Software Development Intern
+AUG 2018 - NOV 2018
+Interning at Nyriad I did rotations on IT, quality assurance and software development. I had to self teach myself C++, CUDA as well as self-manage my working hours and project delivery.
+Domino’s, Mt Maunganui, NZ — Delivery Expert, Shift Runner
+NOV 2013 - FEB 2015
+While in high school I worked as a delivery driver for the fast-food pizza store Dominos. Within 9 months I was promoted to a weekend shift runner, giving me a fast-paced, teamwork driven work environment to grow in.  
+
+
+
+
+
+
+
+
+EDUCATION
+University of Waikato, Hamilton, NZ — BSc Majoring in Computer Science
+FEB 2015 - NOV 2018
+UNIVERSITY PROJECTS
+API Orientated Website
+Used a range of APIs to create an interactive Google Maps search function languages include JavaScript, PHP, CSS, AJAX, and SQL.
+Olympic Themed Database
+Built a database and program to provide users with a wide range of information about previous Olympic games. Languages included C# and SQL.
+Computer Vision Application
+Created an artificial intelligence program that detects the contents of a picture and compares it to other images to score how similar they are using Clojure, a general-purpose programming language
+Interactive Business Website Prototype
+Developed a simple interactive website prototype based on delivering cryptocurrency news to a targeted user.
+Used a range of Human-Computer Interaction techniques with Proto.io to develop an instinctive, easy to use and fluid prototype
+REFERENCES
+Bernard Setz                                                         Dominic Azaris
+Scrum Master, Nyriad                                              Product Owner, Nyriad
+Mobile: +642 192 522                                               Mobile:  +61458388018
+bernard.setz@gmail.com                                      dominic.azaris@outlook.com                                                                
+
+
+
+
+Matthew A. Simmons
+
+
+CEO, Nyriad
+Mobile: +642 112 166 44
+princeps@nyriad.com
+
+
+	SKILLS
+Storage, Git, Linux, CMake, Testing & Automation, CI/CD, Python, Computer Hardware, Bash, CUDA, Jenkins, MaaS, UX development methodologies
+Agile methodologies, Scrum Master training, Prometheus, Grafana, Atlassian
+LANGUAGES
+C/C++, C#, Python, Bash, Golang, HTML/CSS, JS, PHP, SQL, Assembly, Unreal Engine, Clojure
