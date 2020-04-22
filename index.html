@@ -18,7 +18,7 @@
 <body>
 <div class="content">
     <!-- HOME PAGE SECTION STARTS -->
-    <section class="page-section" id="homepage">
+    <section id="homepage">
 
         <img id="homepage-image" src="Images/Black_and_white-min.jpg" alt="Koi and the Goose">
 
@@ -52,10 +52,130 @@
 
     <!-- ABOUT SECTION STARTS -->
     <section class="page-section" id="about">
-        <div id="about-content">
-            hello
+        <div class="content grid" id="about-content">
+            <img id="about-background" src="Images/New_Zealand_North_Island_outline.png" alt="New Zealand">
+
+            <h2>ABOUT</h2>
+
+            <div id="about-p">
+                <p class="content-p">My name is Luke - I'm passionate, curious and enthusiastic individual who is always looking
+                    to dive into exciting challenges and new surroundings.</p>
+                <p class="content-p">I’m interested in full stack development, backend development,
+                    mobile development, UX design and web development.</p>
+                <p class="content-p">I’m currently in search for a long-term software development
+                    role in a company with a vibrant culture.</p>
+            </div>
+
+            <div id="about-bottom-div">
+                <img id="profile-img" src="Images/Profile_Pic.png" alt="A picture of yours truely">
+                <div id="contact-buttons">
+                    <img class="icons" src="Images/Icons/Instagram.png" onclick="openLink('instagram')">
+                    <img class="icons" src="Images/Icons/Twitter.png" onclick="openLink('twitter')">
+                    <img class="icons" src="Images/Icons/Github.png" onclick="openLink('github')">
+                    <img class="icons" src="Images/Icons/Linkden.png" onclick="openLink('linkden')">
+                    <img class="icons" src="Images/Icons/Email.png" onclick="openLink('email')">
+                </div>
+
+                <div id="skills-bar">
+
+                    <div class="flex bar">
+                        <div class="flex bar fill" style="width:80%;">
+                            <div class="flex tag">C++</div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+
+                    <div class="flex bar">
+                        <div class="flex bar fill" style="width:70%;">
+                            <div class="flex tag">PYTHON</div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="flex bar">
+                        <div class="flex bar fill" style="width:70%;">
+                            <div class="flex tag">BASH</div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="flex bar">
+                        <div class="flex bar fill" style="width:60%;">
+                            <div class="flex tag">HTML</div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+
+                    <div class="flex bar">
+                        <div class="flex bar fill" style="width:60%;">
+                            <div class="flex tag">CSS</div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+
+                    <div class="flex bar">
+                        <div class="flex bar fill" style="width:60%;">
+                            <div class="flex tag">JS</div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+
+                    <div class="flex bar">
+                        <div class="flex bar fill" style="width:50%;">
+                            <div class="flex tag">C#</div>
+                        </div>
+                        <span>50%</span>
+                    </div>
+
+                    <div class="flex bar">
+                        <div class="flex bar fill" style="width:40%;">
+                            <div class="flex tag">GOLANG</div>
+                        </div>
+                        <span>40%</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- ABOUT SECTION ENDS -->
+
+    <!-- RESUME SECTION STARTS -->
+    <section class="page-section" id="resume">
+        <button type="button" class="content" id="resume-button">RESUME</button>
+        <div class="content" id="resume-content">
+            <div id="resume-preview-container">
+                <div onmouseover="increaseResume('resume-page-1')" onmouseout="decreaseResume('resume-page-1')" onclick="overlayOn('resume-overlay')"  id="resume-screen">
+                    <p>Click to view</p>
+                </div>
+                <img id="resume-page-1" src="Images/Resume_page_1.jpg">
+            </div>
+
+            <div id="resume-downloads">
+                <h3>RESUME</h3>
+                <a href="Documents/Luke_Armstrong_Resume.pdf" download="Luke_Armstrong_Resume">PDF Document (.pdf)</a>
+                <a href="Documents/Luke_Armstrong_Resume.docx" download="Luke_Armstrong_Resume">Microsoft Word (.docx)</a>
+                <a href="Documents/Luke_Armstrong_Resume.odt" download="Luke_Armstrong_Resume">OpenDocument Format (.odt)</a>
+                <a href="Documents/Luke_Armstrong_Resume.rtf" download="Luke_Armstrong_Resume">Rich Text Format (.rtf)</a>
+                <a href="Documents/Luke_Armstrong_Resume.txt" download="Luke_Armstrong_Resume">Plain Text (.txt)</a>
+            </div>
+
+            <div id="resume-overlay" onclick="overlayOff(this.id)">
+                <embed type="application/pdf" id="resume-pdf" src="Documents/Luke_Armstrong_Resume.pdf#view=FitH" />
+            </div>
+        </div>
+    </section>
+    <!-- RESUME SECTION ENDS -->
+
+    <!-- PROJECTS SECTION STARTS -->
+    <section class="page-section" id="projects">
+        <div class="content grid" id="projects-content">
+            <h2>PROJECTS</h2>
+        </div>
+
+    </section>
+    <!-- PROJECTS SECTION ENDS -->
+
+
 </div>
 
 <script src="script.js"></script>
