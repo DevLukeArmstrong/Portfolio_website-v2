@@ -65,8 +65,6 @@ coll.addEventListener("click", function() {
 function increaseResume(x) {
     document.getElementById(x).style.width = "100%";
     document.getElementById(x).style.height = "100%";
-
-    // document.getElementById(x).style.transition-duration = "0.2s";
 }
 
 function decreaseResume(x) {

@@ -36,12 +36,12 @@
                 <ul>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#resume">RESUME</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
                     <li><a id="icon-link" href="#homepage">
                         <img id="nav-icon" src="Images/RocketIcon.png" alt="oopsies">
                     </a></li>
-                    <li><a href="#shop">SHOP</a></li>
-                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <!-- <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#gallery">GALLERY</a></li> -->
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
@@ -51,7 +51,7 @@
     <!-- HOME PAGE SECTION ENDS -->
 
     <!-- ABOUT SECTION STARTS -->
-    <section class="page-section" id="about">
+    <section class="page-section">
         <div class="content grid" id="about-content">
             <img id="about-background" src="Images/New_Zealand_North_Island_outline.png" alt="New Zealand">
 
@@ -140,7 +140,7 @@
     <!-- ABOUT SECTION ENDS -->
 
     <!-- RESUME SECTION STARTS -->
-    <section class="page-section" id="resume">
+    <section class="page-section">
         <button type="button" class="content" id="resume-button">RESUME</button>
         <div class="content" id="resume-content">
             <div id="resume-preview-container">
@@ -167,13 +167,77 @@
     <!-- RESUME SECTION ENDS -->
 
     <!-- PROJECTS SECTION STARTS -->
-    <section class="page-section" id="projects">
+    <section class="page-section">
         <div class="content grid" id="projects-content">
             <h2>PROJECTS</h2>
-        </div>
 
+            <div id="project-thumbnails">
+                <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                    <img src="Images/RocketIcon_Icon.png">
+                    <p>This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love. </p>
+                </div>
+
+                <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                    <img src="Images/RocketIcon_Icon.png">
+                    <p>This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love. </p>
+                </div>
+
+                <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                    <img src="Images/RocketIcon_Icon.png">
+                    <p>This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love. </p>
+                </div>
+
+                <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                    <img src="Images/RocketIcon_Icon.png">
+                    <p>This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love. </p>
+                </div>
+
+                <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                    <img src="Images/RocketIcon_Icon.png">
+                    <p>This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love. </p>
+                </div>
+
+                <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                    <img src="Images/RocketIcon_Icon.png">
+                    <p>This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love. </p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- PROJECTS SECTION ENDS -->
+
+    <!-- CONTACT SECTION STARTS -->
+    <section class="page-section">
+        <div class="content grid" id="contact-content">
+            <h2>CONTACT</h2>
+
+            <form action="PHP/mail.php" method="POST">
+                <div id="left-col">
+                    <input type="text" name="name" id="name" placeholder="NAME">
+                    <input type="text" name="email" id="email" placeholder="EMAIL">
+                </div>
+                <div id="right-col">
+                    <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
+                </div>
+                <div id="info-bottom">
+                    <input type="submit" name="submit" id="submit" value="SEND MESSAGE">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- CONTACT SECTION ENDS -->
 
 
 </div>
