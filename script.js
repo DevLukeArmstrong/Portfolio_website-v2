@@ -50,26 +50,48 @@ function openLink(link) {
 
 /******************************** Resume */
 var coll = document.getElementById("resume-button");
-var i;
 
 coll.addEventListener("click", function() {
   this.classList.toggle("resume-active");
   var content = this.nextElementSibling;
   if (content.style.maxHeight){
     content.style.maxHeight = null;
+    document.getElementById("arrow-down").style.visibility="visible"
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
+    setTimeout(document.getElementById("arrow-down").style.visibility="hidden", 500);
   }
 });
 
+var coll = document.getElementById("arrow-up");
+
+coll.addEventListener("click", function() {
+  var content = document.getElementById("resume-button").nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+    document.getElementById("arrow-down").style.visibility="visible"
+  }
+});
+
+function resumeButtonHighlight(id){
+  document.getElementById(id).style.backgroundColor = "#ccc";
+  document.getElementById("arrow-down").style.borderTopColor = "#ccc";
+}
+
+function resumeButtonOriginal(id){
+  document.getElementById(id).style.backgroundColor = "#7fb0a6";
+  document.getElementById("arrow-down").style.borderTopColor = "#7fb0a6";
+}
+
 function increaseResume(x) {
-    document.getElementById(x).style.width = "100%";
-    document.getElementById(x).style.height = "100%";
+    document.getElementById(x).style.width = "82%";
+    document.getElementById(x).style.height = "82%";
+    // document.getElementById("resume-preview-container").style.marginBottom = "2%";
 }
 
 function decreaseResume(x) {
-    document.getElementById(x).style.width = "98%";
-    document.getElementById(x).style.height = "98%";
+    document.getElementById(x).style.width = "80%";
+    document.getElementById(x).style.height = "80%";
 }
 
 function overlayOn(x) {

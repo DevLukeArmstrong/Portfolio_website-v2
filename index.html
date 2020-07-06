@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="content">
+<div>
     <!-- HOME PAGE SECTION STARTS -->
     <section id="homepage">
 
@@ -51,7 +51,7 @@
     <!-- HOME PAGE SECTION ENDS -->
 
     <!-- ABOUT SECTION STARTS -->
-    <section class="page-section">
+    <section class="page-section" id="about">
         <div class="content grid" id="about-content">
             <img id="about-background" src="Images/New_Zealand_North_Island_outline.png" alt="New Zealand">
 
@@ -68,7 +68,7 @@
 
             <div id="about-bottom-div">
                 <img id="profile-img" src="Images/Profile_Pic.png" alt="A picture of yours truely">
-                <div id="contact-buttons">
+                <div id="about-contact-buttons">
                     <img class="icons" src="Images/Icons/Instagram.png" onclick="openLink('instagram')">
                     <img class="icons" src="Images/Icons/Twitter.png" onclick="openLink('twitter')">
                     <img class="icons" src="Images/Icons/Github.png" onclick="openLink('github')">
@@ -86,7 +86,7 @@
                     </div>
 
                     <div class="flex bar">
-                        <div class="flex bar fill" style="width:70%;">
+                        <div class="flex bar fill" style="width: 70%;">
                             <div class="flex tag">PYTHON</div>
                         </div>
                         <span>70%</span>
@@ -140,39 +140,62 @@
     <!-- ABOUT SECTION ENDS -->
 
     <!-- RESUME SECTION STARTS -->
-    <section class="page-section">
-        <button type="button" class="content" id="resume-button">RESUME</button>
-        <div class="content" id="resume-content">
-            <div id="resume-preview-container">
-                <div onmouseover="increaseResume('resume-page-1')" onmouseout="decreaseResume('resume-page-1')" onclick="overlayOn('resume-overlay')"  id="resume-screen">
-                    <p>Click to view</p>
+    <section class="page-section" id="resume">
+        <div id="resume-content">
+
+            <button type="button" class="content" id="resume-button" onmouseover="resumeButtonHighlight(this.id)" onmouseout="resumeButtonOriginal(this.id)">RESUME</button>
+
+            <div id="resume-content-holder">
+                <div id="resume-inner-content">
+                    <div id="resume-preview-container">
+                        <div onmouseover="increaseResume('resume-page-1')" onmouseout="decreaseResume('resume-page-1')" onclick="overlayOn('resume-overlay')"  id="resume-screen">
+                            <p>Click to view</p>
+                        </div>
+                        <img id="resume-page-1" src="Images/Resume_page_1.jpg">
+                    </div>
+
+                    <div id="resume-downloads">
+                        <h3>DOWNLOADS</h3>
+                        <a href="Documents/Luke_Armstrong_Resume.pdf" download="Luke_Armstrong_Resume">PDF Document (.pdf)</a>
+                        <a href="Documents/Luke_Armstrong_Resume.docx" download="Luke_Armstrong_Resume">Microsoft Word (.docx)</a>
+                        <a href="Documents/Luke_Armstrong_Resume.odt" download="Luke_Armstrong_Resume">OpenDocument Format (.odt)</a>
+                        <a href="Documents/Luke_Armstrong_Resume.rtf" download="Luke_Armstrong_Resume">Rich Text Format (.rtf)</a>
+                        <a href="Documents/Luke_Armstrong_Resume.txt" download="Luke_Armstrong_Resume">Plain Text (.txt)</a>
+                    </div>
+
+                    <div id="resume-overlay" onclick="overlayOff(this.id)">
+                        <embed type="application/pdf" id="resume-pdf" src="Documents/Luke_Armstrong_Resume.pdf#view=FitH" />
+                    </div>
                 </div>
-                <img id="resume-page-1" src="Images/Resume_page_1.jpg">
+                <div id="arrow-container">
+                    <div id="arrow-up"></div>
+                </div>
             </div>
-
-            <div id="resume-downloads">
-                <h3>RESUME</h3>
-                <a href="Documents/Luke_Armstrong_Resume.pdf" download="Luke_Armstrong_Resume">PDF Document (.pdf)</a>
-                <a href="Documents/Luke_Armstrong_Resume.docx" download="Luke_Armstrong_Resume">Microsoft Word (.docx)</a>
-                <a href="Documents/Luke_Armstrong_Resume.odt" download="Luke_Armstrong_Resume">OpenDocument Format (.odt)</a>
-                <a href="Documents/Luke_Armstrong_Resume.rtf" download="Luke_Armstrong_Resume">Rich Text Format (.rtf)</a>
-                <a href="Documents/Luke_Armstrong_Resume.txt" download="Luke_Armstrong_Resume">Plain Text (.txt)</a>
-            </div>
-
-            <div id="resume-overlay" onclick="overlayOff(this.id)">
-                <embed type="application/pdf" id="resume-pdf" src="Documents/Luke_Armstrong_Resume.pdf#view=FitH" />
-            </div>
+            <div id="arrow-down"></div>
         </div>
     </section>
     <!-- RESUME SECTION ENDS -->
 
     <!-- PROJECTS SECTION STARTS -->
-    <section class="page-section">
+    <section class="page-section" id="projects">
         <div class="content grid" id="projects-content">
             <h2>PROJECTS</h2>
 
             <div id="project-thumbnails">
                 <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                    <!-- <img src="Images/RocketIcon_Icon.png">
+                    <p>This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love.
+                        This website. Made with HTML5, CSS, JS & Love. </p> -->
+                </div>
+
+                <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
+                    <img src="Images/RocketIcon_Icon.png">
+                    <p>This website, intended as a personal CV.
+                        Made with HTML5, CSS and Javascript. </p>
+                </div>
+
+                <!-- <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
                     <img src="Images/RocketIcon_Icon.png">
                     <p>This website. Made with HTML5, CSS, JS & Love.
                         This website. Made with HTML5, CSS, JS & Love.
@@ -198,28 +221,14 @@
                     <p>This website. Made with HTML5, CSS, JS & Love.
                         This website. Made with HTML5, CSS, JS & Love.
                         This website. Made with HTML5, CSS, JS & Love. </p>
-                </div>
-
-                <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
-                    <img src="Images/RocketIcon_Icon.png">
-                    <p>This website. Made with HTML5, CSS, JS & Love.
-                        This website. Made with HTML5, CSS, JS & Love.
-                        This website. Made with HTML5, CSS, JS & Love. </p>
-                </div>
-
-                <div class="project-container" onClick="window.open('https://github.com/DevLukeArmstrong/Lukes-Website', '_blank');">
-                    <img src="Images/RocketIcon_Icon.png">
-                    <p>This website. Made with HTML5, CSS, JS & Love.
-                        This website. Made with HTML5, CSS, JS & Love.
-                        This website. Made with HTML5, CSS, JS & Love. </p>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
     <!-- PROJECTS SECTION ENDS -->
 
     <!-- CONTACT SECTION STARTS -->
-    <section class="page-section">
+    <section class="page-section" id="contact">
         <div class="content grid" id="contact-content">
             <h2>CONTACT</h2>
 
@@ -238,8 +247,12 @@
         </div>
     </section>
     <!-- CONTACT SECTION ENDS -->
-
-
+<footer>
+    <div id="footer-img">
+        <img src="Images/RocketIcon.png">
+    </div>
+    <h4>LUKE ARMSTRONG 2020</h4>
+</footer>
 </div>
 
 <script src="script.js"></script>
