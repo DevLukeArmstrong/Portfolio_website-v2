@@ -1,10 +1,45 @@
 /******************************** Nav Bar*/
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {navBarStick()};
+window.onscroll = function() {
+  navBarStick()
+};
 
 // Get the navbar
 var navbar = document.getElementById("nav-container");
+var aboutpage = document.getElementById("about");
+var resumepage = document.getElementById("resume");
+var projectspage = document.getElementById("projects");
+var contactpage = document.getElementById("contact");
+
 var sticky = navbar.offsetTop;
+
+var aboutTop = aboutpage.offsetTop - 10;
+var resumeTop = resumepage.offsetTop;
+var projectsTop = projectspage.offsetTop;
+var contactTop = contactpage.offsetTop - 100;
+
+var aboutBottom = aboutpage.offsetTop + aboutpage.offsetHeight;
+var resumeBottom = resumepage.offsetTop + resumepage.offsetHeight;
+var projectsBottom = projectspage.offsetTop + projectspage.offsetHeight - 100;
+var contactBottom = contactpage.offsetTop + contactpage.offsetHeight;
+
+var aboutLink = document.getElementById("about-nav-link");
+var resumeLink = document.getElementById("resume-nav-link");
+var projectsLink = document.getElementById("projects-nav-link");
+var contactLink = document.getElementById("contact-nav-link");
+
+var links = [aboutLink, resumeLink, projectsLink, contactLink]
+
+function removeNavActive()
+{
+  var i;
+  for (i = 0; i < links.length; i++) {
+    if( links[i].classList.contains("active-red") )
+    {
+      links[i].classList.remove("active-red");
+    }
+  }
+}
 
 function navBarStick() {
 
@@ -15,6 +50,30 @@ function navBarStick() {
   else
   {
     navbar.classList.remove("sticky");
+  }
+
+  if (window.pageYOffset >= aboutTop & window.pageYOffset < aboutBottom)
+  {
+    removeNavActive();
+    aboutLink.classList.add("active-red");
+  }
+  else if (window.pageYOffset >= resumeTop & window.pageYOffset < resumeBottom)
+  {
+    removeNavActive();
+    resumeLink.classList.add("active-red");
+  }
+  else if (window.pageYOffset >= projectsTop & window.pageYOffset < projectsBottom)
+  {
+    removeNavActive();
+    projectsLink.classList.add("active-red");
+  }
+  else if (window.pageYOffset >= contactTop & window.pageYOffset < contactBottom)
+  {
+    removeNavActive();
+    contactLink.classList.add("active-red");
+  }
+  else {
+    removeNavActive();
   }
 }
 
@@ -40,7 +99,7 @@ function openLink(link) {
       window.open("https://www.linkedin.com/in/luke-armstrong96/");
       break;
     case 'email':
-      window.open("https://www.instagram.com/luke__armstrong/");
+      window.open("mailto:ltarmstrong96@gmail.com");
       break;
     default:
       console.log("Unknown link: " + link);
@@ -79,8 +138,8 @@ function resumeButtonHighlight(id){
 }
 
 function resumeButtonOriginal(id){
-  document.getElementById(id).style.backgroundColor = "#7fb0a6";
-  document.getElementById("arrow-down").style.borderTopColor = "#7fb0a6";
+  document.getElementById(id).style.backgroundColor = "#e31b6d";
+  document.getElementById("arrow-down").style.borderTopColor = "#e31b6d";
 }
 
 function increaseResume(x) {

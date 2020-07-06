@@ -34,15 +34,15 @@
             <div class="nav" id="main-nav">
         
                 <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#resume">RESUME</a></li>
+                    <li><a href="#about" id="about-nav-link">ABOUT</a></li>
+                    <li><a href="#resume" id="resume-nav-link">RESUME</a></li>
                     <li><a id="icon-link" href="#homepage">
                         <img id="nav-icon" src="Images/RocketIcon.png" alt="oopsies">
                     </a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#projects" id="projects-nav-link">PROJECTS</a></li>
                     <!-- <li><a href="#shop">SHOP</a></li>
                     <li><a href="#gallery">GALLERY</a></li> -->
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#contact" id="contact-nav-link">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -232,6 +232,25 @@
         <div class="content grid" id="contact-content">
             <h2>CONTACT</h2>
 
+            <div id="contact-top-info">
+                <div id="contact-phone">
+                    <img class="icons" src="Images/Icons/Phone.png" >
+                    <p>0278500472</p>
+                </div>
+                <div id="contact-email">
+                    <img class="icons" src="Images/Icons/Email.png" onclick="openLink('email')">
+                    <a href = "mailto: ltarmstrong96@gmail.com">ltarmstrong96@gmail.com</a href>
+                </div>
+
+            <div id="contact-buttons">
+                <img class="icons" src="Images/Icons/Instagram.png" onclick="openLink('instagram')">
+                <img class="icons" src="Images/Icons/Twitter.png" onclick="openLink('twitter')">
+                <img class="icons" src="Images/Icons/Github.png" onclick="openLink('github')">
+                <img class="icons" src="Images/Icons/Linkden.png" onclick="openLink('linkden')">
+            </div>
+
+        </div>
+
             <form action="PHP/mail.php" method="POST">
                 <div id="left-col">
                     <input type="text" name="name" id="name" placeholder="NAME">
@@ -241,6 +260,7 @@
                     <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
                 </div>
                 <div id="info-bottom">
+                    <img id="info-icon" src="Images/Icons/Info.png"><p id="info-text">All fields are required</p>
                     <input type="submit" name="submit" id="submit" value="SEND MESSAGE">
                 </div>
             </form>

@@ -20,7 +20,7 @@ h2 {
     color: white;
 
     padding-bottom: 4px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #e31b6d;
 }
 
 .page-section {
@@ -137,9 +137,9 @@ h2 {
     width: 40%;
 
     color:white;
-    background-color: rgba(0,0,0, 0.0);
+    background-color: rgba(0,0,0, 0.3);
     border-radius: 4px;
-    border: 1px solid white;
+    border: 1px solid #e31b6d;
 
     grid-column: 1;
     grid-row: 6;
@@ -188,6 +188,10 @@ h2 {
 #main-nav li a:hover {
     transition-duration: 0.2s;
     opacity: 0.99;
+}
+
+.active-red {
+    color: #e31b6d !important;
 }
 
 #icon-link {
@@ -394,8 +398,8 @@ padding-top: 60px;
 }
 
 #resume-button {
-    width: 99vw;
-    padding: 28px;
+    grid-column: 1/5;
+    padding: 28px 0px;
     margin-bottom: 0px;
     margin-top: 60px;
     
@@ -409,7 +413,7 @@ padding-top: 60px;
     text-align: center;
 
     color: #444;
-    background-color: #7fb0a6;
+    background-color: #e31b6d;
 }
 
 #arrow-down {
@@ -420,7 +424,7 @@ padding-top: 60px;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
 
-    border-top: 25px solid #7fb0a6;
+    border-top: 25px solid #e31b6d;
 }
 
 #resume-inner-content {
@@ -604,6 +608,44 @@ padding-top: 60px;
     background-color: #888781;
 }
 
+#contact-top-info {
+    justify-self: center;
+    margin-top: 60px;
+}
+
+#contact-phone p {
+    display: inline-block;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    vertical-align: top;
+
+    font-family: 'Roboto';
+    font-size: 1.2em;
+}
+
+#contact-email img {
+    margin-top: 20px;
+}
+
+#contact-email a {
+    position: absolute;
+    color: white;
+    padding-top: 30px;
+    padding-left: 5px;
+    vertical-align: top;
+
+    font-family: 'Roboto';
+    font-size: 1.2em;
+
+    text-decoration: none;
+}
+
+#contact-buttons {
+    justify-self: center;
+    padding-top: 20px;
+}
+
 #contact-content form {
     margin-top: 50px;
 }
@@ -654,6 +696,7 @@ padding-top: 60px;
     margin: 0px 0px;
     padding-top: 12px;
     padding-bottom: 0px;
+    padding-left: 10px;
 
     resize: vertical;
 }
@@ -668,6 +711,22 @@ padding-top: 60px;
     width: 28%;
     margin-right: 1%;
     float: right;
+}
+
+#info-icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+}
+
+#info-text {
+    display: inline-block;
+    position: absolute;
+    margin: 2px 5px;
+    text-align: top;
+
+    color: white;
+    font-family: 'Raleway'
 }
 
 /******************************** FOOTER*/
