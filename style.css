@@ -269,9 +269,9 @@ padding-top: 60px;
 
 #about-p > p {
     margin: 20px 20px;
-    font-size: 1.4em;
+    font-size: 1.1em;
     font-family: 'Roboto';
-    text-align: center;
+    text-align: left;
 }
 
 @media(max-width: 768px){
@@ -293,6 +293,8 @@ padding-top: 60px;
     justify-self: center;
     height: 280px;
     width: 280px;
+
+    margin-top: 20px;
 
     grid-column: 1;
     grid-row: 1;
@@ -327,6 +329,8 @@ padding-top: 60px;
 
     justify-self: center;
     align-self: center;
+
+    margin-bottom: 40px;
 }
 
 #skills-bar {
@@ -746,7 +750,7 @@ padding-top: 60px;
 
 #contact-content #right-col textarea {
     height: 72px;
-    width: calc(100% - 5px);
+    width: calc(100% - 0px);
     margin: 0px 0px;
     padding-top: 12px;
     padding-bottom: 0px;
@@ -764,6 +768,7 @@ padding-top: 60px;
     height: 37px;
     width: 28%;
     float: right;
+    margin-right: 5px;
 }
 
 #info-icon {
