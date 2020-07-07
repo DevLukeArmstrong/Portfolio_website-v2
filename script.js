@@ -97,8 +97,85 @@ function openDescription(lang)
         document.getElementById("c++-p").classList.add("p-show");
       }
       break;
+    case "python":
+      if (document.getElementById("python-description").classList.contains("description-show"))
+      {
+        document.getElementById("python-p").classList.remove("p-show");
+        document.getElementById("python-description").classList.remove("description-show");
+      }
+      else {
+        document.getElementById("python-description").classList.add("description-show");
+        document.getElementById("python-p").classList.add("p-show");
+      }
+      break;
+    case "bash":
+      if (document.getElementById("bash-description").classList.contains("description-show"))
+      {
+        document.getElementById("bash-p").classList.remove("p-show");
+        document.getElementById("bash-description").classList.remove("description-show");
+      }
+      else {
+        document.getElementById("bash-description").classList.add("description-show");
+        document.getElementById("bash-p").classList.add("p-show");
+      }
+      break;
+    case "html":
+      if (document.getElementById("html-description").classList.contains("description-show"))
+      {
+        document.getElementById("html-p").classList.remove("p-show");
+        document.getElementById("html-description").classList.remove("description-show");
+      }
+      else {
+        document.getElementById("html-description").classList.add("description-show");
+        document.getElementById("html-p").classList.add("p-show");
+      }
+      break;
+    case "css":
+      if (document.getElementById("css-description").classList.contains("description-show"))
+      {
+        document.getElementById("css-p").classList.remove("p-show");
+        document.getElementById("css-description").classList.remove("description-show");
+      }
+      else {
+        document.getElementById("css-description").classList.add("description-show");
+        document.getElementById("css-p").classList.add("p-show");
+      }
+      break;
+    case "js":
+      if (document.getElementById("js-description").classList.contains("description-show"))
+      {
+        document.getElementById("js-p").classList.remove("p-show");
+        document.getElementById("js-description").classList.remove("description-show");
+      }
+      else {
+        document.getElementById("js-description").classList.add("description-show");
+        document.getElementById("js-p").classList.add("p-show");
+      }
+      break;
+    case "c#":
+      if (document.getElementById("c#-description").classList.contains("description-show"))
+      {
+        document.getElementById("c#-p").classList.remove("p-show");
+        document.getElementById("c#-description").classList.remove("description-show");
+      }
+      else {
+        document.getElementById("c#-description").classList.add("description-show");
+        document.getElementById("c#-p").classList.add("p-show");
+      }
+      break;
+    case "golang":
+      if (document.getElementById("golang-description").classList.contains("description-show"))
+      {
+        document.getElementById("golang-p").classList.remove("p-show");
+        document.getElementById("golang-description").classList.remove("description-show");
+      }
+      else {
+        document.getElementById("golang-description").classList.add("description-show");
+        document.getElementById("golang-p").classList.add("p-show");
+      }
+      break;
     default:
-      alert("Add this in");
+      console("Error: About skills button section not coded.");
   }
 }
 
@@ -128,19 +205,6 @@ function openLink(link) {
 }
 
 /******************************** Resume */
-// var coll = document.getElementById("resume-button");
-
-// coll.addEventListener("click", function() {
-//   this.classList.toggle("resume-active");
-//   var content = this.nextElementSibling;
-//   if (content.style.maxHeight){
-//     content.style.maxHeight = null;
-//     document.getElementById("arrow-down").style.visibility="visible"
-//   } else {
-//     content.style.maxHeight = content.scrollHeight + "px";
-//     document.getElementById("arrow-down").style.visibility="hidden";
-//   }
-// });
 
 var coll = document.getElementById("resume-button");
 
