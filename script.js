@@ -16,11 +16,11 @@ var sticky = navbar.offsetTop;
 var aboutTop = aboutpage.offsetTop - 10;
 var resumeTop = resumepage.offsetTop - 10;
 var projectsTop = projectspage.offsetTop;
-var contactTop = contactpage.offsetTop - 100;
+var contactTop = contactpage.offsetTop;
 
 var aboutBottom = aboutpage.offsetTop + aboutpage.offsetHeight - 10;
 var resumeBottom = resumepage.offsetTop + resumepage.offsetHeight;
-var projectsBottom = projectspage.offsetTop + projectspage.offsetHeight - 100;
+var projectsBottom = projectspage.offsetTop + projectspage.offsetHeight;
 var contactBottom = contactpage.offsetTop + contactpage.offsetHeight;
 
 var aboutLink = document.getElementById("about-nav-link");
