@@ -78,11 +78,15 @@
 
                 <div id="skills-bar">
 
-                    <div class="flex bar">
+                    <div class="flex bar" onclick="openDescription('c++')">
                         <div class="flex bar fill" style="width:80%;">
                             <div class="flex tag">C++</div>
                         </div>
                         <span>80%</span>
+                    </div>
+                    <div id="c++-description" class="lang-description">
+                        <p id="c++-p">I have 1.5 years experience as a C++ developer
+                             in a start-up company</p>
                     </div>
 
                     <div class="flex bar">
@@ -143,7 +147,7 @@
     <section class="page-section" id="resume">
         <div id="resume-content">
 
-            <button type="button" class="content" id="resume-button" onmouseover="resumeButtonHighlight(this.id)" onmouseout="resumeButtonOriginal(this.id)">RESUME</button>
+            <button type="button" class="content" id="resume-button" onmouseover="resumeButtonHighlight(this.id)" onmouseout="resumeButtonOriginal(this.id)" onclick="resumeClick()">RESUME</button>
 
             <div id="resume-content-holder">
                 <div id="resume-inner-content">
@@ -171,7 +175,7 @@
                     <div id="arrow-up"></div>
                 </div>
             </div>
-            <div id="arrow-down"></div>
+            <div id="arrow-down" onmouseover="resumeButtonHighlight('resume-button')" onmouseout="resumeButtonOriginal('resume-button')" onclick="resumeClick()"></div>
         </div>
     </section>
     <!-- RESUME SECTION ENDS -->
@@ -234,8 +238,8 @@
 
             <div id="contact-top-info">
                 <div id="contact-phone">
-                    <img class="icons" src="Images/Icons/Phone.png" >
-                    <p>0278500472</p>
+                    <img class="icons" id="phone-icon" src="Images/Icons/Phone.png" >
+                    <p>+64278500472</p>
                 </div>
                 <div id="contact-email">
                     <img class="icons" src="Images/Icons/Email.png" onclick="openLink('email')">
@@ -271,7 +275,7 @@
     <div id="footer-img">
         <img src="Images/RocketIcon.png">
     </div>
-    <h4>LUKE ARMSTRONG 2020</h4>
+    <h4>LUKE ARMSTRONG <span style="color:#e31b6d;">2020</span></h4>
 </footer>
 </div>
 

@@ -14,11 +14,11 @@ var contactpage = document.getElementById("contact");
 var sticky = navbar.offsetTop;
 
 var aboutTop = aboutpage.offsetTop - 10;
-var resumeTop = resumepage.offsetTop;
+var resumeTop = resumepage.offsetTop - 10;
 var projectsTop = projectspage.offsetTop;
 var contactTop = contactpage.offsetTop - 100;
 
-var aboutBottom = aboutpage.offsetTop + aboutpage.offsetHeight;
+var aboutBottom = aboutpage.offsetTop + aboutpage.offsetHeight - 10;
 var resumeBottom = resumepage.offsetTop + resumepage.offsetHeight;
 var projectsBottom = projectspage.offsetTop + projectspage.offsetHeight - 100;
 var contactBottom = contactpage.offsetTop + contactpage.offsetHeight;
@@ -82,6 +82,26 @@ function goto(url)
   window.location=url;
 }
 
+/******************************** About buttons */
+function openDescription(lang)
+{
+  switch(lang) {
+    case "c++":
+      if (document.getElementById("c++-description").classList.contains("description-show"))
+      {
+        document.getElementById("c++-p").classList.remove("p-show");
+        document.getElementById("c++-description").classList.remove("description-show");
+      }
+      else {
+        document.getElementById("c++-description").classList.add("description-show");
+        document.getElementById("c++-p").classList.add("p-show");
+      }
+      break;
+    default:
+      alert("Add this in");
+  }
+}
+
 /******************************** Contact buttons */
 function openLink(link) {
   switch(link)
@@ -108,19 +128,33 @@ function openLink(link) {
 }
 
 /******************************** Resume */
+// var coll = document.getElementById("resume-button");
+
+// coll.addEventListener("click", function() {
+//   this.classList.toggle("resume-active");
+//   var content = this.nextElementSibling;
+//   if (content.style.maxHeight){
+//     content.style.maxHeight = null;
+//     document.getElementById("arrow-down").style.visibility="visible"
+//   } else {
+//     content.style.maxHeight = content.scrollHeight + "px";
+//     document.getElementById("arrow-down").style.visibility="hidden";
+//   }
+// });
+
 var coll = document.getElementById("resume-button");
 
-coll.addEventListener("click", function() {
-  this.classList.toggle("resume-active");
-  var content = this.nextElementSibling;
+function resumeClick() {
+  coll.classList.toggle("resume-active");
+  var content = document.getElementById("resume-content-holder");
   if (content.style.maxHeight){
     content.style.maxHeight = null;
     document.getElementById("arrow-down").style.visibility="visible"
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
-    setTimeout(document.getElementById("arrow-down").style.visibility="hidden", 500);
+    document.getElementById("arrow-down").style.visibility="hidden";
   }
-});
+}
 
 var coll = document.getElementById("arrow-up");
 
